@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript practice</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+   
+    <button onclick="addTextNode('yes');">yes</button>
+    <button onclick="addTextNode('No');">No</button>
+    <button onclick="addTextNode('why not')">Why Not</button>
+
+    <p id="para">may i come in</p>
+
+    <script>
+
+        const addTextNode = (text) =>{
+            const newText = document.createTextNode(" " + text);
+
+            let para = document.getElementById("para");
+
+            para.appendChild(newText);
+
+        }
+
+    </script>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>

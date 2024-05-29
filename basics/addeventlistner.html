@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript practice</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <button >change mode!</button>
+
+
+    <script>
+
+        let btn = document.querySelector("button");
+        
+        let mode = "light";
+
+        const changemode = () =>{
+            if(mode == "light"){
+                document.querySelector("body").style.backgroundColor = "black";
+                mode = "dark";
+            }else{
+                document.querySelector("body").style.backgroundColor = "white";
+                mode = "light";
+            }
+        }
+
+        btn.addEventListener("dblclick",changemode)
+       
+
+       
+    </script>
+    
+    </script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

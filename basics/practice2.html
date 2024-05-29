@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript practice</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+
+
+   <script>
+    let btn = document.createElement("button");
+    btn.innerText = "click me";
+    btn.style.backgroundColor = "red";
+    btn.style.color = "white";
+
+    document.querySelector("body").prepend(btn); 
+   </script>
+
+
+   <script>
+    let para = document.createElement("p");
+    para.innerText = "this is a para";
+    para.setAttribute("class","paragraph");
+    document.querySelector("body").append(para);
+    para.classList.add("newPara");
+    console.log(para.classList)
+   </script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript practice</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+   
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+
+<button onclick="abc()">click</button>
+
+<script>
+    function abc(){
+        let doc = document.getElementsByClassName("box");
+
+        doc[0].innerHTML = "apple";
+        doc[1].innerHTML = "banana";
+        doc[2].innerHTML = "kiwi"; 
+    }
+</script>
+
+    <script src="/script.js"></script>
+</body>
+</html>

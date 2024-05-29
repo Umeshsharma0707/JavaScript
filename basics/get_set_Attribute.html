@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript practice</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+   
+
+    <h1 id="heading">this is javascript</h1>
+
+    <div id="div">this is a div</div>
+
+
+    <script>
+        let div = document.getElementById("div");
+        div.style.backgroundColor = "green";
+        div.style.padding = "50px 15px";
+        div.style.width = "100px";
+        div.style.height = "100px"; 
+    </script>
+
+    <script>
+        let heading = document.querySelector("h1");
+        let id = heading.getAttribute("id");
+        console.log(id);
+        heading.setAttribute("id","newHeading");
+    </script>
+
+</script>
+
+    <script src="/script.js"></script>
+</body>
+</html>

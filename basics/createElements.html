@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript practice</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <h1>i am a java developer</h1>
+
+    <div>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+        </ul>
+    </div>
+
+    <p>this is a paragraph</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <button onclick="deletePara()">delete para</button>
+    <button onclick="deleteAllPara()">delete all paras</button>
+
+    <script>
+        function deletePara() {
+            let para = document.querySelector("p");
+            para.remove();
+        }
+
+        function deleteAllPara(){
+            let paras = document.querySelectorAll("p");
+
+            for(para of paras){
+                para.remove();
+            }
+        }
+    </script>
+
+    <script>
+        let div = document.querySelector("div");
+
+        let newbtn = document.createElement("button");
+        let heading = document.createElement("h1");
+        heading.innerText = "this is a heading created by javascript ";
+        document.querySelector("body").prepend(heading); 
+        console.log(newbtn);
+        
+        newbtn.innerText = "click Me!";
+
+        div.append(newbtn);
+        
+        
+
+    </script>
+
+    </script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
